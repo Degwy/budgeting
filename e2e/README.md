@@ -4,12 +4,12 @@ Budgeting app is a showcase project that demonstrates important decisions in arc
 
 # 2. Plan Components
 ## 2.1. Objectives 
-The general goal of this test effort will be to test budgeting app functinality across its two modules: Budgeting and Repots. Also, the integration between these modules. 
+The general goal of this test effort will be to test budgeting app functionality across its two modules: Budgeting and Reports. Also, the integration between these modules. 
 
 ## 2.2. Testing Components
 This app functionality will be tested at three levels:
 The functionality of Budget module and testing the function of adding amounts with different categories and validating summation and subtraction operations.
-The functinality of Reports moduleand the relation between charts and charts’s map guide in these components:  
+The functionality of Reports module and the relation between charts and charts’s map guide in these components:  
 - Inflow vs Outflow
 - Spending by Category.
 
@@ -28,7 +28,7 @@ All features of Budgeting app should be tested:
 - View charts to represent Spending by Category
 
 ## 3.2. Features Not to Be Tested
-No features should be execluded from the testing of this app. 
+No features should be excluded from the testing of this app. 
 
 # 4. Testing Strategy 
 Describe the overall approach to testing. For each major group of features or feature combinations, specify the approach which will ensure that these feature groups are
