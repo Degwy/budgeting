@@ -1,5 +1,5 @@
 # 1. Introduction
-This is a simple budget management application. It tracks inflow and outflow, shows remaining budget, and interesting reports with charts. As such, it offers more features than the usual Todo App.
+This is a simple budget management application. It tracks inflow and outflow, shows the remaining budget, and interesting reports with charts. As such, it offers more features than the usual Todo App.
 Budgeting app is a showcase project that demonstrates important decisions in architecture and development of a modern React application.
 
 # 2. Plan Components
@@ -8,15 +8,15 @@ The general goal of this test effort will be to test budgeting app functionality
 
 ## 2.2. Testing Components
 This app functionality will be tested at three levels:
-The functionality of Budget module and testing the function of adding amounts with different categories and validating summation and subtraction operations.
-The functionality of Reports module and the relation between charts and charts’s map guide in these components:  
+The functionality of the Budget module and testing the function of adding amounts with different categories and validating summation and subtraction operations.
+The functionality of the Reports module and the relation between charts and charts' map guide in these components:  
 - Inflow vs Outflow
 - Spending by Category.
 
 The integration between Budget module and Reports module will be tested to make sure that the charts in Reports module are a mirror to what being added to Budget module.
 
 ## 2.3. Training Required
-Sinc we are going to create data on the fly, there is a need to know how to reset defaultTransactions to have the upper hand on test data. 
+Since we are going to create data on the fly, there is a need to know how to reset defaultTransactions to have the upper hand on test data. 
 Except that, no new training should be required to achieve the testing goals enumerated in this plan. 
 
 # 3. Scope
@@ -44,10 +44,39 @@ Unit testing will be performed using Jest. Unit tests will be run as part of an 
 
 ## 4.2. New Feature Functionality Testing
 ### 4.2.2. Automated Testing
-Only three test must be automated and this number may be increased based on allowed time and resource availability. Also, these automated tests should cover end to end testing. 
+Only three test cases must be automated and this number may be increased based on allowed time and resource availability. Also, these automated tests should cover end to end testing.
+Automated tests are highlighted in bold. 
 
 ### 4.2.3. Manual Testing
 Manual testing will be performed to verify the functionality of individual components and highlighting parts and colors match between charts and charts’ guide.
+
+#### Budget Screen Tests:
+- *Navigating between Budget and Reports screens*
+- *Check Budget screen while there are no data in the screen*
+- *Check Reports screen while there are no data in the screen*
+- *Compare Category dropdown list with what configured in the system*
+- *Validate the headers with the spec in Budget screen*
+- ***Check the functionality of each Category item***
+- ***Check the style of each added Category item***
+- *Check that ADD button is enabled when filling Value field*
+- ***Check the functionality of adding records***
+- *Check the sorting of added records*
+- ***Check the functionality of Working Balance equation***
+- ***Check the style of Working Balance equation***
+
+#### Reports Screen - Inflow vs Outflow
+- *Check the mapping between charts and charts' guide*
+- *Check that there are no duplicate colors in the charts*
+- *Check that the total under each charts*
+
+#### Reports Screen - Spending by Category
+- *Check that the number of colors block equal number of colors in charts' guide*
+
+#### Integration and End to End:
+- ***Check that all Categories and Values are displayed correctly in Inflow vs Outflow charts***
+- ***Check that total Inflow/Outflow of used categories in Budget is displayed correctly in Inflow vs Outflow charts***
+- ***Check that all Categories and Values will be displayed correctly in Sending by Category's chart***
+
 
 ### 4.2.4. System & Integration Testing
 Integration testing should be done between Budget and Reports modules.
