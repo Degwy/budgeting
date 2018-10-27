@@ -13,5 +13,3 @@ coverage
 /.vscode
 /.babel-cache
 *.report.html
-*/Gemfile.lock
-*/e2e/*.html

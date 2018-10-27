@@ -1,3 +1,7 @@
+This is a test plan for a simple budgeting app https://github.com/ModusCreateOrg/budgeting. Please read test plan carefully. Execution steps at the end of this file.
+
+The framework with built using several tools: Ruby-2.3.1, Cucumber, Rspec, Capybara, etc.
+
 # 1. Introduction
 This is a simple budget management application. It tracks inflow and outflow, shows the remaining budget, and interesting reports with charts. As such, it offers more features than the usual Todo App.
 Budgeting app is a showcase project that demonstrates important decisions in architecture and development of a modern React application.
@@ -105,3 +109,21 @@ Testing activities should be done in two days. Testing may start on 23 October 2
 
 # 7. Risks/Assumptions
 There are no security concerns since the app and the code are public for all users.
+
+
+#Run the Tests
+
+Before running the tests, please be informed that I removed the default data (which were exist in ./app/modules/defaults.js), so, I can control test data and make each scenario isolated.
+
+## Before Running the Tests
+We need to clone and build the application under test before executing our automation tests:
+1.  Run `git clone https://github.com/Degwy/budgeting.git` to download the app on your machine 
+2.  Navigate to project directory and run `npm install` to install app dependencies
+3.  Run `npm start` to serve the app on [localhost:8000](http://localhost:8000)
+4.  Run `npm run install-gems` to build automation test dependencies
+
+## Running the Tests
+To Run the tests, you need to make sure that you are downloaded and updated chrome driver to version 69. Also, you need to make sure that you are using Ruby version  2.31
+You have the following options:
+1.  Run `npm run automated-tests` to run all automated tests and a HTML report will be produced in the project directory (automated_test_result.html) 
+2.  To run a specific the tests of specific tag, run `TAG=@e2e npm run automated-tests-tags`. Two tags are defined for now: @e2e and @add_budget    
