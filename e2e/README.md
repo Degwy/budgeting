@@ -56,13 +56,13 @@ Manual testing will be performed to verify the functionality of individual compo
 - *Check Reports screen while there are no data in the screen*
 - *Compare Category dropdown list with what configured in the system*
 - *Validate the headers with the spec in Budget screen*
-- ***Check the functionality of each Category item***
-- ***Check the style of each added Category item***
+- *Check the functionality of each Category item*
+- *Check the style of each added Category item*
 - *Check that ADD button is enabled when filling Value field*
 - ***Check the functionality of adding records***
 - *Check the sorting of added records*
 - ***Check the functionality of Working Balance equation***
-- ***Check the style of Working Balance equation***
+- *Check the style of Working Balance equation*
 
 #### Reports Screen - Inflow vs Outflow
 - *Check the mapping between charts and charts' guide*

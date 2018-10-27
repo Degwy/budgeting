@@ -62,4 +62,3 @@ Feature: As a user, I should be able to add new records
       | Income     | 1,000.25  |
       | Income     | 1385.02   |
 
-
