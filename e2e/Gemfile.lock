@@ -21,6 +21,8 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    archive-zip (0.7.0)
+      io-like (~> 0.3.0)
     backports (3.11.4)
     builder (3.2.3)
     byebug (10.0.2)
@@ -36,8 +38,9 @@ GEM
       launchy
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
-    chromedriver2-helper (0.0.10)
-      nokogiri
+    chromedriver-helper (1.1.0)
+      archive-zip (~> 0.7.0)
+      nokogiri (~> 1.6)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
     cucumber (3.1.2)
@@ -68,6 +71,7 @@ GEM
     gherkin (5.1.0)
     i18n (1.1.1)
       concurrent-ruby (~> 1.0)
+    io-like (0.3.0)
     launchy (2.4.3)
       addressable (~> 2.3)
     loofah (2.2.2)
@@ -139,7 +143,7 @@ DEPENDENCIES
   byebug
   capybara
   capybara-screenshot
-  chromedriver2-helper
+  chromedriver-helper
   cucumber
   cucumber-rails
   rspec
@@ -147,4 +151,4 @@ DEPENDENCIES
   selenium-webdriver (= 3.14.0)
 
 BUNDLED WITH
-   1.15.4
+   1.17.0.pre.2

@@ -24,7 +24,8 @@
     "postinstall": "rimraf .cache-loader & npm run dll",
     "precommit": "lint-staged",
     "install-gems": "bundle install --gemfile=./e2e/Gemfile",
-    "automated-tests": "cucumber -r e2e/features/support -r e2e/features/step_definitions e2e/features/ -f html -o test.html --format pretty"
+    "automated-tests": "cucumber -r e2e/features/support -r e2e/features/step_definitions e2e/features/ -f html -o automated_test_result.html --format pretty",
+    "automated-tests-tags": "cucumber -r e2e/features/support -r e2e/features/step_definitions e2e/features/ -f html -o automated_test_result.html --format pretty --tags $TAG"
   },
   "lint-staged": {
     "*.{js,jsx}": [
