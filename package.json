@@ -22,7 +22,9 @@
     "flow": "flow",
     "dll": "webpack --config webpack.config.dll.js",
     "postinstall": "rimraf .cache-loader & npm run dll",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "install-gems": "bundle install --gemfile=./e2e/Gemfile",
+    "automated-tests": "cucumber -r e2e/features/support -r e2e/features/step_definitions e2e/features/ -f html -o test.html --format pretty"
   },
   "lint-staged": {
     "*.{js,jsx}": [

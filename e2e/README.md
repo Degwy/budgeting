@@ -16,7 +16,7 @@ The functionality of the Reports module and the relation between charts and char
 The integration between Budget module and Reports module will be tested to make sure that the charts in Reports module are a mirror to what being added to Budget module.
 
 ## 2.3. Training Required
-Since we are going to create data on the fly, there is a need to know how to reset defaultTransactions to have the upper hand on test data. 
+Since we are going to create data on the fly, there is a need to know how to reset defaultTransactions to have the upper hand on test data. Also,  search is needed to know how to run automated test using npm. 
 Except that, no new training should be required to achieve the testing goals enumerated in this plan. 
 
 # 3. Scope
@@ -67,10 +67,10 @@ Manual testing will be performed to verify the functionality of individual compo
 #### Reports Screen - Inflow vs Outflow
 - *Check the mapping between charts and charts' guide*
 - *Check that there are no duplicate colors in the charts*
-- *Check that the total under each charts*
+- *Check that the total under each chart*
 
 #### Reports Screen - Spending by Category
-- *Check that the number of colors block equal number of colors in charts' guide*
+- *Check that the number of colors blocks equal number of colors in charts' guide*
 
 #### Integration and End to End:
 - ***Check that all Categories and Values are displayed correctly in Inflow vs Outflow charts***
